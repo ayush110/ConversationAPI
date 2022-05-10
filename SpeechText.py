@@ -15,14 +15,10 @@ def get_audio():
         
         try:
             said = r.recognize_google(audio)
-            print(said)
+            
         except UnknownFileError as e:
             print("yes: " + str(e))
         except Exception as e:
             print("Exception: " + str(e))
 
     return said
-
-text = get_audio()
-
-print(text)

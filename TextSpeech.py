@@ -27,7 +27,5 @@ def text_to_speech(stext):
         voice = voice,
         audio_config = audio_config
     )
-
     
-
     return response

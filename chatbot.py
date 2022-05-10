@@ -33,6 +33,7 @@ def gpt3(stext, chat_log=None):
     )
 
     reply = str(response.choices[0].text)
+    
     return reply
 
 
